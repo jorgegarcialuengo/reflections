@@ -1,0 +1,77 @@
+*** LESSON 1
+
+How did viewing a diff between two versions help you see the bug that was introduced?
+
+diff -u "plus the name of the two files you want to compare" #this
+gives you the old and new version of the two files when there is a difference between them
+
+
+Other interesting bash tips:
+cd ~
+mkdir
+pwd #shows the directory you are in
+ls #lists the files in the directory
+open ~/
+export PATH=$PATH:/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin #to make subl open Suplime from the terminal, but once in .bash_profile
+
+
+How could having access to the entire history of a file make you a more efficient programmer in the long term?
+
+It could help you easily access your modifications and find errors you made.
+
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved,like Google docs does?
+
+You might forget to commit and have a too large peace of code to commit
+
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google docs, treat each file separatly?
+
+Because Git users may have done changes in multiple files affecting the same repository.
+
+
+git --version #to check which Git version you have
+git clone "Plus the url of the repository eg https://github.com/udacity/asteroids.git" #to clone a repositoty
+git config --global color.ui auto #to get colored 
+
+
+How can you use git log and git diff to view the history of the files?
+
+git log #to get the log of the last commmits
+q #to quit the log that was too long to fit in one window
+
+
+git checkout "commit number" #to go to a previous version on your code
+git checkout -b "new branch name" #checks out and retains the new changes you commit
+
+
+How might using version control make you more confident to make changes that could brake something?
+
+Cause you can easily find your mistakes and revert to unbroken code versions
+
+
+mv "oestination folder/file" "new name of the file" #moves the file to the folder where you currently are from the original folder
+
+
+git config --global core.editor "text to call the new editor" #to name a default editor
+
+*** LESSON 2
+
+ls -a #shows hidden files!
+git init #to create a .git file in the location you are in
+git status #to find which files have changed since the last commit
+
+What happens when you initialize a repository? Why do you need to do it?
+
+It creates a hidden git file ".git". It lets you start saving your files in the repository.
+
+git add #to add files to the staging area
+git reset #to unstage a file you dont want to track anymore
+
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+The staging area lets you work with separate parts of the code, and isolate the work you want to commit. It also lets you modify things in your folder withougt having to commit them or put them in the repository
+
+
+
